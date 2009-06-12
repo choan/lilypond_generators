@@ -1,0 +1,23 @@
+# -*- encoding: utf-8 -*-
+
+Gem::Specification.new do |s|
+  s.name = %q{<%= PROJECT_NAME %>}
+  s.version = "<%= PROJECT_VERSION %>"
+
+  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
+  s.authors = ["Choan Gálvez"]
+  s.date = %q{2009-03-31}
+  s.description = %q{<%= PROJECT_DESCRIPTION %>}
+  s.email = %q{<%= PROJECT_EMAIL %>}
+  s.files = %w[<%= PROJECT_FILES_STR %>]
+  s.executables = %w[<%= PROJECT_EXECUTABLES.join(' ') %> ]
+  s.has_rdoc = <%= PROJECT_HAS_RDOC %>
+  s.homepage = %q{<%= PROJECT_HOMEPAGE %>}
+  s.bindir = "bin"
+  s.rdoc_options = ["--inline-source", "--charset=UTF-8"]
+  s.require_paths = ["lib"]
+  # s.rubyforge_project = %q{lilypond_generators}
+  s.rubygems_version = %q{1.3.0}
+  s.summary = %q{<%= PROJECT_SUMMARY %>}
+  s.add_dependency("rubigen")
+end

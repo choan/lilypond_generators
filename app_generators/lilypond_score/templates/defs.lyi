@@ -1,0 +1,23 @@
+<%= version_str %>
+
+<% (0...movements).each do |movement| -%>
+<% mvt = "Mvt" + roman(movement) -%>
+<%= mvt %> = ""
+
+rehearsalMarks<%= mvt %> = {
+  
+}
+
+outline<%= mvt %> = {
+  <<
+    \rehearsalMarks<%= mvt %>
+    {
+      \time 4/4
+      \tempo 4 = 120
+      
+      \bar "|."
+    }
+  >>
+  
+}
+<% end -%>

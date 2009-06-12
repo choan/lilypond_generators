@@ -1,0 +1,11 @@
+<%= version_str %>
+
+<% (0...movements).each do |movement| -%>
+<% mvt = "Mvt" + roman(movement) -%>
+<%= instrument %><%= mvt %> = {
+  
+}
+
+<% end -%>
+
+

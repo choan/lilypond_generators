@@ -1,0 +1,15 @@
+<%= version_str %>
+
+\header
+{
+  title = \markup{ <%= score_title %> }
+  composer = "<%= composer %>"
+  instrument = \instrument
+  % subtitle = ""
+  % opus = ""
+  % copyright = ""
+  % date = ""
+  % source = ""
+  % footer = ""
+  % tagline = ""
+}

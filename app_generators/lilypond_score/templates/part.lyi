@@ -1,0 +1,24 @@
+<%= version_str %>
+
+\include "defs.lyi"
+
+\book
+{
+  \include "header.lyi"
+  
+  <% (0...movements).each do |movement| -%>
+  <% mvt = "Mvt" + roman(movement) %>
+  \score
+  {
+    \new Staff
+    {
+      << \keepWithTag #'part \notes<%= mvt %> \outline<%= mvt %> >>
+    }
+    \header { piece = \<%= mvt %> }
+    \layout {
+      
+    }
+  }
+  <% end %>
+}
+
