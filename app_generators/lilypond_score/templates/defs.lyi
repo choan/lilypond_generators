@@ -1,5 +1,10 @@
 <%= version_str %>
 
+rMark = #(define-music-function (parser location markp) (string?)
+#{
+  \mark \markup { \box \bold $markp }
+#})
+
 <% (0...movements).each do |movement| -%>
 <% mvt = "Mvt" + roman(movement) -%>
 <%= mvt %> = ""

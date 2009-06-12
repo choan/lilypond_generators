@@ -18,7 +18,11 @@ class LilypondScoreGenerator < RubiGen::Base
   end
 
   def manifest
+    
+    self.instruments = ['instrument'] if self.instruments.empty?
+    
     record do |m|
+            
       m.directory ''
       m.template 'header.lyi', 'header.lyi'
       m.template 'defs.lyi', 'defs.lyi'

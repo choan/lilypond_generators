@@ -21,9 +21,9 @@ instrument = ""
         % \set Staff.shortInstrumentName = ""
         % \set Staff.midiInstrument = ""
         <%- if instrument == instruments.last -%>
-        << \<%= instrument %><%= mvt %> \outline<%= mvt %> >>
+        << \<%= instrument %><%= mvt %> \keepWithTag #'score \outline<%= mvt %> >>
         <%- else -%>
-        \<%= instrument %><%= mvt %>
+        \<%= instrument %><%= mvt %> \keepWithTag #'score
         <%- end -%>
       }
       <% end %>
